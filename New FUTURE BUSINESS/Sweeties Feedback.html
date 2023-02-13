@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback</title>
+<link rel="stylesheet" 
+Aizel Aguilar
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style type="text/css">
+    body {
+            margin: 10px; 
+            padding: 50px;
+            background-image: "X.jpeg";
+        }
+       
+        .rating input{
+            display: none;
+             }
+        
+        
+        .rating {
+            position: absolute; 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+             .rating label{
+            display: block;
+            cursor: pointer;
+            width: 50px;
+            background: #ccc;
+             }
+             .rating label:before{ content: '\f005';
+                 font-family: FontAwesome; position: relative;
+             }
+             .rating label:after{ content: '\f005';
+                 font-family: FontAwesome; position: absolute; display: block; font-size: 50px; 
+                 color: #1f9cff; top: 0%; opacity: 1; transition: 5s; 
+                 text-shadow: 0 2px 5px rgba(0.0.0.5);
+             }
+             .rating label:hover :after,.rating input:checked
+             {opacity: 1;
+             }
+             div{ font-size: 100px;
+            
+             }
+             
+</style>
+</head>
+<body background="X.jpeg">
+
+<h1>Delivery Feedback</h1>
+<p>Thanks for ordering with us. Please tell us about your experience.</p>
+<form action="/action_page.php">
+    <label for="fname">Name*</label> <br>   
+    <input type="text" id="fname" name="fname"value="">
+
+    <h2>where are you?</h2>
+    <input type="text" id="fname" name="fname"value="" <br>
+    <br> <label for="fname">Street Address</label><br>
+    <input type="text" id="fname" name="fname"value="" <br>
+    <br> <label for="addressline2">Address line2</label><br>
+
+    <table>
+        <tr>
+            <td><input type="Adress" id="lname" name="lname" value=""><br>
+                <label for="lname">StreetAdress*</label></td>
+            
+         
+          </tr>
+        <tr>
+          <td><input type="Adress" id="lname" name="lname" value=""><br>
+            <label for="lname">city</label></td>
+          <td><input type="Adress" id="lname" name="lname" value=""><br>
+            <label for="lname">State/Region/Province</label></td>
+       
+        </tr>
+        <tr>
+          <td><input type="Adress" id="lname" name="lname" value=""><br>
+            <label for="lname">Postal / Zip Code</label</td>
+          <td><select class="option" name="Country">
+            <option disabled="disabled" selected="selected">--Choose Option</option>
+            <option >Philippines</option>
+            <option >USA</option>
+            <option >Canada</option>
+            <option >other</option>
+        </select>country</td>
+          
+        </tr>
+      </table><br>
+
+      <h2 id="student">Was your experience good? *</h2>
+    <label class="radio">
+        <input class="radio-one" type="radio" id="fname" name="fname"value="Chezel Aguilar">
+    <span class="checkmark"></span>
+    yes
+    </label><br>
+
+    <label class="radio">
+        <input class="radio-one" type="radio" id="fname" name="fname"value="Chezel Aguilar">
+    <span class="checkmark"></span>
+    partly 
+    </label><br>
+    <label class="radio">
+        <input class="radio-two" type="radio" id="fname" name="fname"value="Chezel Aguilar">
+    <span class="checkmark"></span>
+    no<br>
+
+    <h2 id="student">Are you satisfied with our service system? *</h2>
+    <label class="radio">
+        <input class="radio-one" type="radio" id="fname" name="fname"value="Chezel Aguilar">
+    <span class="checkmark"></span>
+    yes
+    </label><br>
+
+    <label class="radio">
+        <input class="radio-one" type="radio" id="fname" name="fname"value="Chezel Aguilar">
+    <span class="checkmark"></span>
+    partly 
+    </label><br>
+    <label class="radio">
+        <input class="radio-two" type="radio" id="fname" name="fname"value="Chezel Aguilar">
+    <span class="checkmark"></span>
+    no<br>
+
+    <div class="rating">
+        <h3>How would you rate are service?</h3>
+        <div class="star-icon"> 
+            <input type="radio" name="rating1" id="rating1" for="Star1">
+             <label for="rating1" class="fa fa-star"></label>
+            <input type="radio" name="rating1" id="rating2" for="Star2">
+                <label for="rating2" class="fa fa-star"></label>
+                 <input type="radio" name="rating1" id="rating3" for="Star3">
+                    <label for="rating3" class="fa fa-star"></label>
+                     <input type="radio" name="rating1" id="rating4" for="Star4">
+                        <label for="rating4" class="fa fa-star"></label>
+                         <input type="radio" name="rating1" id="rating5" for="Star5">
+                            <label for="rating5" class="fa fa-star"></label>
+</div>
+</label><br>
+<button type="submit">register</button>
+
+</body>
